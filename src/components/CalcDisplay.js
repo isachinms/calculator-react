@@ -2,8 +2,8 @@ import React from 'react'
 
 export const CalcDisplay = props => {
     return (
-        <div className="calc-display">
-            {props.result}
+        <div className="display">
+            <p>{props.result}</p>
         </div>
     )
 }

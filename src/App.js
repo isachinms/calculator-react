@@ -4,7 +4,7 @@ import { CalcDisplay } from './components/CalcDisplay'
 import Keypad from './components/Keypad'
 import './App.css'
 
-class Calculator extends React.Component {
+class App extends React.Component {
     constructor() {
         super()
         this.state = {
@@ -70,9 +70,8 @@ class Calculator extends React.Component {
 
     render() {
         return (
-            <div className="app">
+            <div id="container">
                 <div className="calculator">
-                    <h1>React Calculator</h1>
                     <CalcDisplay result={this.state.result} />
                     <Keypad handleClick={this.handleClick}/>
                 </div>
@@ -81,4 +80,4 @@ class Calculator extends React.Component {
     }
 }
 
-export default Calculator
+export default App
